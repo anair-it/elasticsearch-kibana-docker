@@ -1,0 +1,17 @@
+elasticsearch:
+  image: elasticsearch:latest
+  container_name: elasticsearch
+  command: elasticsearch
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+
+kibana:
+  build: kibana/
+  container_name: kibana
+  volumes:
+    - ./kibana/config/:/opt/kibana/config/
+  ports:
+    - "5601:5601"
+  links:
+    - elasticsearch
