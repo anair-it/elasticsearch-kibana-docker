@@ -17,7 +17,7 @@ First time requires download and install of elasticsearch and kibana images. Aft
 
 
 ## URLs
-- Elasticsearch: http://localhost:9092
+- Elasticsearch: http://localhost:9200
 - Kibana: http://localhost:5601
 
 ## Create an index
